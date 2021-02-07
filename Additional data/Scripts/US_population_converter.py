@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import datetime
 
-path = '../All additional data/USpopulation_1959Jan-2020Nov_monthly.csv'
+path = '../Raw data/USpopulation_1959Jan-2020Nov_monthly.csv'
 
 df = pd.read_csv(path, index_col='DATE')
 df.index = pd.to_datetime(df.index)
